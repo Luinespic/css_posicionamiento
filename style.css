@@ -1,0 +1,65 @@
+/* SOLO POSITION - DISPLAY ESTÁ PROHIBIDO */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #9ad79b;
+}
+
+/* HEADER debe estar fijo durante la navegación en la parte superior, y mediante un color de fondo hacer que los elementos durante el scroll pasen "por detrás". */
+
+header {
+  border: 2px solid red;
+  padding: 10px;
+  position: sticky;
+  margin-bottom: 10px;
+}
+
+/* MAIN (su sidebar debe estar colocado a la derecha del contenido, justo debajo de header) */
+
+main {
+  border: 2px solid green;
+  position: relative;
+}
+.content {
+  border: 2px solid white;
+  padding: 20px;
+  position: absolute;
+}
+
+.sidebar {
+  border: 2px solid violet;
+  position: absolute;
+  right: 0px;
+  margin: 0px 20px;
+}
+
+/* SECTION FEATURES */
+
+.features {
+  padding: 20px;
+  text-align: center;
+}
+
+/* FOOTER debe de estar "pegada" al fondo de la aplicación. */
+
+footer {
+  border: 2px solid grey;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 44%;
+}
+
