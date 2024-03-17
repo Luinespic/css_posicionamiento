@@ -19,29 +19,42 @@ body {
 /* HEADER debe estar fijo durante la navegación en la parte superior, y mediante un color de fondo hacer que los elementos durante el scroll pasen "por detrás". */
 
 header {
-  border: 2px solid red;
+  border: 2px dashed #9ad79b;
   padding: 10px;
-  position: sticky;
+  position: fixed;
   margin-bottom: 10px;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
 }
 
 /* MAIN (su sidebar debe estar colocado a la derecha del contenido, justo debajo de header) */
 
 main {
-  border: 2px solid green;
-  position: relative;
+  height: 170px;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  
 }
 .content {
-  border: 2px solid white;
+  border: 2px dashed #9ad79b;
   padding: 20px;
   position: absolute;
+  height: 100%;
+  max-width: 80%;
+  overflow: scroll;
 }
 
 .sidebar {
-  border: 2px solid violet;
+  border: 2px dashed #9ad79b;
   position: absolute;
   right: 0px;
   margin: 0px 20px;
+  height: 100%;
+  max-width: 20%;
+  padding: 20px;
+  overflow: scroll;
 }
 
 /* SECTION FEATURES */
@@ -49,17 +62,24 @@ main {
 .features {
   padding: 20px;
   text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 270px;
+  border: 2px dashed #9ad79b;
+  overflow: scroll;
 }
 
 /* FOOTER debe de estar "pegada" al fondo de la aplicación. */
 
 footer {
-  border: 2px solid grey;
+  border: 2px dashed #9ad79b;
   position: fixed;
   bottom: 0;
   padding: 20px;
   text-align: center;
   bottom: 0;
-  left: 44%;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
 }
 
